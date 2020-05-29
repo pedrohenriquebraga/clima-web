@@ -4,6 +4,9 @@ Um site feito em HTML5, CSS3, JavaScript e Axios. O site também consome a API d
 ## Objetivo do site
 O objetivo do site é mostrar o clima de qualquer cidade do mundo, inclusive do Brasil. Ele tem a integração com duas API's, uma para obter o ID de qualquer cidade do mundo e outra para obter a previsão do tempo atualizada.
 
+## Por quê eu criei esse site?
+Eu criei ele para testar meus conhecimentos e ver se meus estudos estão dando certo. Eu tirei a ideia de um repositório chamado [App Ideas Collection](https://github.com/florinpop17/app-ideas). Eu gostei muito do desafio proposto e resolvi tentar fazer ele com tudo que foi proposto.
+
 ## Quais são as dependências do site?
 O site possuí apenas a dependência do [Axios](https://github.com/axios/axios) para a obtenção de dados da API. Você pode usar o serviço CDN para importar ele:
 ```html
