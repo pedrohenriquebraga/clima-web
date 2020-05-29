@@ -5,7 +5,7 @@ Um site feito em HTML5, CSS3, JavaScript e Axios. O site também consome a API d
 O objetivo do site é mostrar o clima de qualquer cidade do mundo, inclusive do Brasil. Ele tem a integração com duas API's, uma para obter o ID de qualquer cidade do mundo e outra para obter a previsão do tempo atualizada.
 
 ## Quais são as dependências do site?
-O site possuí apenas a dependência do [Axios](https://github.com/axios/axios) para a obtenção de dados da API. Você pode usar o de serviço CDN para importar ele:
+O site possuí apenas a dependência do [Axios](https://github.com/axios/axios) para a obtenção de dados da API. Você pode usar o serviço CDN para importar ele:
 ```html
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 ```
