@@ -6,7 +6,7 @@ function idCidade() {
     if (cidade == '') {
         alert('Você deve informar uma cidade!!')
     } else {
-        axios.get(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${cidade}&language=pt-br`)
+        axios.get(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${cidade}&language=pt-br`)
             .then(function (res) {
                 let id = res.data[0]["Key"]
                 return pegaClima(id)
@@ -18,7 +18,7 @@ function idCidade() {
 }
 
 function pegaClima(id) {
-    axios.get(`http://dataservice.accuweather.com/forecasts/v1/daily/1day/${id}?apikey=${apiKey}&language=pt-br&metric=true`)
+    axios.get(`https://dataservice.accuweather.com/forecasts/v1/daily/1day/${id}?apikey=${apiKey}&language=pt-br&metric=true`)
         .then(function (res) {
             let data = res.data.DailyForecasts[0]
             let info = {
