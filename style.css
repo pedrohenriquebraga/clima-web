@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(29, 34, 43);
+    color: white;
+}
+
+#city {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    width: 450px;
+    margin-left: 50px;
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(255, 123, 0);
+    border-width: 3px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+#city:hover {
+    background-color: rgb(230, 229, 229);
+}
+
+#form {
+   text-align: center;
+   margin-top: auto;
+   box-sizing: border-box;
+}
+
+#form h2{
+    color: rgb(255, 166, 0);
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#form button {
+    font-weight: bolder;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+#form button:hover {
+    background-color: rgb(235, 152, 0);
+}
+
+#clima {
+    font-family: 'Bitter';
+    color: black;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 10px auto;
+    border-width: 5px;
+    border-style: solid;
+    border-left-color: blue;
+    border-top-color: blue;
+    border-right-color: red;
+    border-bottom-color: red;
+    box-sizing: border-box;
+}
+
+#clima h2 {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#clima #temp {
+    box-sizing: border-box;
+    margin: 30px;
+}
+
+
+#clima #Max{
+    text-align: center;
+    float: right;
+    font-size: 28pt;
+    color: red;
+    margin-right: 13pt;
+}
+
+#clima #Min {
+    text-align: center;
+    font-size: 28pt;
+    float: left;
+    color: rgb(17, 17, 252);
+    margin-left: 13pt;
+}
+
+#clima #Max sup{
+    float: right;
+    font-size: 15pt;
+    color: red;
+    clear: both;
+}
+
+#clima #Min sup{
+    font-size: 15pt;
+    float: right;
+    color: rgb(17, 17, 252);
+    clear: both;
+}
+
+#clima p {
+    text-align: center;
+    font-size: 10pt;
+    font-weight: lighter;
+    clear: both;
+    padding-top: 30px;
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+}

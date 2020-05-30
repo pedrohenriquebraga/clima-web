@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <title>Clima Web</title>
+</head>
+<body>
+    <div id="form">
+        <h2>Veja a previsão do tempo da sua cidade aqui!</h2>
+        <input type="text" id="city" placeholder="Nome da cidade"> <button onclick="idCidade()">Procurar</button>
+    </div>
+    <div id="clima">
+        <h2 id="nomeCidade">Cidade</h2>
+        <div id="temp">
+            <h3 id="Min">Min<sup>°C</sup></h3>
+            <h3 id='Max'>Max<sup>°C</sup></h3>
+        </div>
+        <p id="info"><em>Informações Extras</em></p>
+    </div>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados 2020</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
