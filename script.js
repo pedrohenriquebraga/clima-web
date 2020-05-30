@@ -1,4 +1,4 @@
-let apiKey = 'r7yduaipb8R6pIkZLHdfuweCM4nVN78w'
+let apiKey = '7pM0mlwPWSgG2eTWWBs7tAyGv9WiGAIu' // Não use essa API KEY
 let hora = new Date().getHours()
 
 function idCidade() {
