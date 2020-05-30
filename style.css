@@ -19,17 +19,39 @@ body {
     transition: 0.5s;
 }
 
+::-webkit-input-placeholder {
+    font-weight: 650px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-weight: 650px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-weight: 650px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+:-ms-input-placeholder {
+    font-weight: 650px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
 #city:hover {
     background-color: rgb(230, 229, 229);
 }
 
 #form {
-   text-align: center;
-   margin-top: auto;
-   box-sizing: border-box;
+    text-align: center;
+    margin-top: auto;
+    box-sizing: border-box;
 }
 
-#form h2{
+#form h2 {
     color: rgb(255, 166, 0);
     text-align: center;
     font-size: 17px;
@@ -40,14 +62,14 @@ body {
     font-weight: bolder;
     padding: 12px;
     border-radius: 8px;
-    background-color: rgb(255, 166, 0);
+    background-color: rgba(255, 166, 0, 0.932);
     color: white;
     border: none;
     transition: 0.5s;
 }
 
 #form button:hover {
-    background-color: rgb(235, 152, 0);
+    background-color: rgba(255, 166, 0, 0.842);
 }
 
 #clima {
@@ -79,8 +101,7 @@ body {
     margin: 30px;
 }
 
-
-#clima #Max{
+#clima #Max {
     text-align: center;
     float: right;
     font-size: 28pt;
@@ -96,14 +117,14 @@ body {
     margin-left: 13pt;
 }
 
-#clima #Max sup{
+#clima #Max sup {
     float: right;
     font-size: 15pt;
     color: red;
     clear: both;
 }
 
-#clima #Min sup{
+#clima #Min sup {
     font-size: 15pt;
     float: right;
     color: rgb(17, 17, 252);

@@ -15,6 +15,7 @@ function idCidade() {
                 alert(`Erro ao tentar procurar a cidade ${cidade}.`)
             })
     }
+    
 }
 
 function pegaClima(id) {
@@ -48,13 +49,16 @@ function renderClima(obj) {
 
     nomeCidade.innerText = inp
 
-    minimo.innerHTML = `${obj.temp.min}<sup>°C</sup>`
-    maximo.innerHTML = `${obj.temp.max}<sup>°C</sup>`
+    minimo.innerHTML = `${Math.ceil(Number(obj.temp.min))}<sup>°C</sup>`
+    maximo.innerHTML = `${Math.ceil(Number(obj.temp.max))}<sup>°C</sup>`
     if (hora >= 6 || hora < 18) {
-        info.innerHTML = `<em>${obj.extraInfo.dia}</em>`
+        infoExtra.innerHTML = `<em>${obj.extraInfo.dia}</em>`
     } else {
-        info.innerHTML = `<em>${obj.extraInfo.noite}</em>`
+        infoExtra.innerHTML = `<em>${obj.extraInfo.noite}</em>`
     }
+    inp.value = ''
+    inp.focus()
 }
+
 
 
