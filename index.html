@@ -11,19 +11,18 @@
 <body>
     <header>
         <h1>Clima Web</h1>
-        <p>Saiba a Previsão do Tempo de Sua Cidade em Alguns Segundos</p>
+        <p>Saiba a Previsão do Tempo de Sua Cidade em Alguns Segundos!!</p>
     </header>
-    <div id="form">
-        <input type="text" id="city" placeholder="Nome da cidade"> <button title="Botão para pegar o clima" onclick="idCidade()">Procurar</button>
-        <h2>Veja a previsão do tempo da sua cidade aqui!</h2>
+    <div id="form" title="Área para digitar o nome da cidade e botão para obter a previsão do tempo">
+        <input tabindex="0" type="text" id="city" placeholder="Nome da cidade" title="Área para digitar o nome da cidade"> <button tabindex="0" title="Botão para pegar o clima" onclick="idCidade()">Procurar</button>
     </div>
-    <div id="clima">
-        <h2 id="nomeCidade">Cidade</h2>
+    <div id="clima" title="Previsão do Tempo">
+        <h2 id="nomeCidade"></h2>
         <div id="temp">
-            <h3 id="Min">Min<sup>°C</sup></h3>
-            <h3 id='Max'>Max<sup>°C</sup></h3>
+            <h3 id="Min"></h3>
+            <h3 id='Max'></h3>
         </div>
-        <p id="info"><em>Informações Extras</em></p>
+        <p id="info"><em></em></p>
     </div>
 
     <footer>
