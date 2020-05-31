@@ -1,7 +1,26 @@
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(29, 34, 43);
     color: white;
+    margin: 1px;
+}
+
+header {
+    background-color: orange;
+    width: 100%;
+    padding: 1px;
+    text-align: center;
+}
+
+header p {
+    font-size: 15px;
+    margin-top: -10px;
+    font-style: italic;
 }
 
 #city {
@@ -9,8 +28,10 @@ body {
     font-weight: bold;
     padding: 10px;
     border-radius: 8px;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     margin-left: 50px;
+    margin-top: 30px;
     background-color: white;
     border-style: solid;
     border-color: rgb(255, 123, 0);
@@ -42,7 +63,7 @@ body {
 }
 
 #city:hover {
-    background-color: rgb(230, 229, 229);
+    background-color: rgb(216, 216, 216);
 }
 
 #form {
@@ -54,13 +75,13 @@ body {
 #form h2 {
     color: rgb(255, 166, 0);
     text-align: center;
-    font-size: 17px;
-    margin-bottom: 10px;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
 }
 
 #form button {
     font-weight: bolder;
-    padding: 12px;
+    padding: 1.2rem;
     border-radius: 8px;
     background-color: rgba(255, 166, 0, 0.932);
     color: white;
@@ -79,7 +100,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 8px;
-    margin: 10px auto;
+    margin: 1rem auto;
     border-width: 5px;
     border-style: solid;
     border-left-color: blue;
@@ -93,39 +114,39 @@ body {
     color: black;
     font-weight: bolder;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 
 #clima #temp {
     box-sizing: border-box;
-    margin: 30px;
+    margin: 3rem;
 }
 
 #clima #Max {
     text-align: center;
     float: right;
-    font-size: 28pt;
+    font-size: 3.8rem;
     color: red;
-    margin-right: 13pt;
+    margin-right: 2.5rem;
 }
 
 #clima #Min {
     text-align: center;
-    font-size: 28pt;
+    font-size: 3.8rem;
     float: left;
     color: rgb(17, 17, 252);
-    margin-left: 13pt;
+    margin-left: 2.5rem;
 }
 
 #clima #Max sup {
     float: right;
-    font-size: 15pt;
+    font-size: 1.5rem;
     color: red;
     clear: both;
 }
 
 #clima #Min sup {
-    font-size: 15pt;
+    font-size: 1.5rem;
     float: right;
     color: rgb(17, 17, 252);
     clear: both;
@@ -133,13 +154,23 @@ body {
 
 #clima p {
     text-align: center;
-    font-size: 10pt;
+    font-size: 1.4rem;
     font-weight: lighter;
     clear: both;
-    padding-top: 30px;
+    padding-top: 4rem;
 }
 
 footer {
     text-align: center;
-    font-size: 13px;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 58%;
+    }
+
+    #city {
+        width: fit-content;
+    }
 }
