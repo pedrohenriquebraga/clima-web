@@ -2,7 +2,7 @@ let apiKey = '7pM0mlwPWSgG2eTWWBs7tAyGv9WiGAIu' // Não use essa API KEY
 let hora = new Date().getHours()
 
 function idCidade() {
-    let cidade = document.getElementById('city').value
+    let cidade = document.getElementById('city').value || 'Brasília'
     if (cidade == '') {
         alert('Você deve informar uma cidade!!')
     } else {
@@ -41,7 +41,7 @@ function pegaClima(id) {
 }
 
 function renderClima(obj) {
-    let inp = document.getElementById('city').value
+    let inp = document.getElementById('city').value || 'Brasília'
     let nomeCidade = document.getElementById('nomeCidade')
     let maximo = document.getElementById('Max')
     let minimo = document.getElementById('Min')
