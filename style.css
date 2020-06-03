@@ -29,8 +29,7 @@ header p {
     font-weight: bold;
     padding: 10px;
     border-radius: 8px;
-    width: 100%;
-    max-width: 450px;
+    width: 450px;
     margin-left: 50px;
     margin-top: 30px;
     background-color: white;
@@ -174,5 +173,34 @@ footer {
 
     #city {
         width: fit-content;
+    }
+}
+
+@media (min-width: 2560px) {
+    body {
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 610px) {
+    #form {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #form #city {
+        width: 100%;
+        max-width: 88vw;
+        margin: 5px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 95vw;
     }
 }
