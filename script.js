@@ -1,5 +1,6 @@
 let apiKey = '7pM0mlwPWSgG2eTWWBs7tAyGv9WiGAIu' // Não use essa API KEY
 let hora = new Date().getHours()
+let state;
 
 function idCidade() {
     let cidade = document.getElementById('city').value || 'Brasília'
@@ -9,6 +10,7 @@ function idCidade() {
         axios.get(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${cidade}&language=pt-br`)
             .then(function (res) {
                 let id = res.data[0]["Key"]
+                state = res.data[0]["AdministrativeArea"]["ID"]
                 return pegaClima(id)
             })
             .catch(function (error) {
@@ -33,6 +35,7 @@ function pegaClima(id) {
                     noite: data.Night.IconPhrase
                 }
             }
+            console.log(data)
             return renderClima(info)
         })
         .catch(function (error) {
@@ -47,18 +50,15 @@ function renderClima(obj) {
     let minimo = document.getElementById('Min')
     let infoExtra = document.getElementById('info')
 
-    nomeCidade.innerText = inp
+    nomeCidade.innerText = inp + '/' + state
 
-    minimo.innerHTML = `${Math.ceil(Number(obj.temp.min))}<sup>°C</sup>`
-    maximo.innerHTML = `${Math.ceil(Number(obj.temp.max))}<sup>°C</sup>`
+    minimo.innerHTML = `${Math.floor(Number(obj.temp.min))}<sup>°C</sup>`
+    maximo.innerHTML = `${Math.floor(Number(obj.temp.max))}<sup>°C</sup>`
     if (hora >= 6 || hora < 18) {
         infoExtra.innerHTML = `<em>${obj.extraInfo.dia}</em>`
     } else {
         infoExtra.innerHTML = `<em>${obj.extraInfo.noite}</em>`
     }
-    inp.value = ''
-    inp.focus()
 }
-
 
 

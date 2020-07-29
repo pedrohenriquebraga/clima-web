@@ -10,6 +10,18 @@ body {
     margin: -1px;
 }
 
+a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(253, 152, 0);
+    cursor: pointer;
+}
+
+
 header {
     background-color: rgb(253, 152, 0);
     width: 100%;
