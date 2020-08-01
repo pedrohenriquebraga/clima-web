@@ -30,6 +30,7 @@ header p {
     font-weight: bold;
     padding: 10px;
     border-radius: 4px 0 0 4px;
+    border: none;
     width: 450px;
     margin-left: 50px;
     margin-top: 30px;
@@ -80,10 +81,10 @@ header p {
 #form button {
     font-weight: bolder;
     padding: 1.2rem;
+    height: 15px;
     padding-bottom: 26px;
     padding-top: 11px;
     margin-left: -3px;
-    height: 37px;
     border-radius: 0 4px 4px 0;
     background-color: #ffa600ee;
     color: white;
@@ -165,38 +166,52 @@ header p {
 
 section {
     background-color: #353e4e;
-    font-size: 17px;
     width: 55%;
-    min-width: 320px;
+    min-width: 32.0rem;
     margin: auto;
-    margin-top: 50px;
-    padding: 15px;
+    margin-top: 5.0rem;
+    padding: 1.5rem;
     border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section p {
+    font-size: 2.0rem;
     text-align: justify;
 }
 
+section li {
+    font-size: 2.0rem;
+    margin: 1.0rem;
+}
+
 section h1 {
-    font-size: 30px;
+    font-size: 3.0rem;
     text-align: center;
     color: #ffa600ee;
 }
 
+section h2 {
+    font-size: 2.4rem;
+}
+
 section .duvida {
     background-color: #475368;
-    padding: 10px;
+    padding: 1.0rem;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 2.0rem;
 }
 
 section a {
+    height: 5.0rem;
     text-decoration: none;
     color: #00d11cee;
     font-weight: bold;
     transition: 200ms;
 }
 
-section a::after {
-    content: "🔗";
+section a::before {
+    content: "🔗 ";
 }
 
 section a:hover {
@@ -205,7 +220,7 @@ section a:hover {
 
 section .duvida h3 {
     color: #ffa600ee;
-    font-size: 20px;
+    font-size: 2.0rem;
 }
 
 section .duvida img {
@@ -217,12 +232,19 @@ section .duvida img {
     margin: auto;
 }
 
-
+footer {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #ffa600ee;
+    margin-top: 2.0rem;
+}
 
 
 @media (max-width: 425px) {
     html {
-        font-size: 58%;
+        font-size: 50%;
     }
 
     #city {
