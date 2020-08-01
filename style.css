@@ -1,29 +1,19 @@
 html {
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(29, 34, 43);
+    background-color: #1d222b;
     color: white;
     margin: -1px;
 }
 
-a {
-    text-decoration: underline;
-    color: white;
-    font-weight: bold;
-}
-
-a:hover {
-    color: rgb(253, 152, 0);
-}
-
-
 header {
     background-color: rgb(253, 152, 0);
     width: 100%;
+    margin: auto;
     padding: 1px;
     text-align: center;
 }
@@ -39,14 +29,11 @@ header p {
     text-align: center;
     font-weight: bold;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 4px 0 0 4px;
     width: 450px;
     margin-left: 50px;
     margin-top: 30px;
     background-color: white;
-    border-style: solid;
-    border-color: rgb(255, 123, 0);
-    border-width: 3px;
     color: rgb(0, 0, 0);
     transition: 0.5s;
 }
@@ -93,8 +80,12 @@ header p {
 #form button {
     font-weight: bolder;
     padding: 1.2rem;
-    border-radius: 8px;
-    background-color: rgba(255, 166, 0, 0.932);
+    padding-bottom: 26px;
+    padding-top: 11px;
+    margin-left: -3px;
+    height: 37px;
+    border-radius: 0 4px 4px 0;
+    background-color: #ffa600ee;
     color: white;
     border: none;
     transition: 0.5s;
@@ -160,7 +151,7 @@ header p {
 #clima #Min sup {
     font-size: 1.5rem;
     float: right;
-    color: rgb(17, 17, 252);
+    color: #1111fc;
     clear: both;
 }
 
@@ -172,10 +163,62 @@ header p {
     padding: 3.5rem;
 }
 
-footer {
-    text-align: center;
-    font-size: 1.3rem;
+section {
+    background-color: #353e4e;
+    font-size: 17px;
+    width: 55%;
+    min-width: 320px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: justify;
 }
+
+section h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #ffa600ee;
+}
+
+section .duvida {
+    background-color: #475368;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+section a {
+    text-decoration: none;
+    color: #00d11cee;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+section a::after {
+    content: "🔗";
+}
+
+section a:hover {
+    color: #ffffffee;
+}
+
+section .duvida h3 {
+    color: #ffa600ee;
+    font-size: 20px;
+}
+
+section .duvida img {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+
 
 @media (max-width: 425px) {
     html {
@@ -206,12 +249,14 @@ footer {
 
     #form #city {
         width: 100%;
-        max-width: 88vw;
+        max-width: 400px;
         margin: 5px;
+        border-radius: 6px;
     }
 
     button {
         width: 100%;
-        max-width: 95vw;
+        max-width: 400px;
+        border-radius: 6px;
     }
 }
