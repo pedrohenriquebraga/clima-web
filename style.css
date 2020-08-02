@@ -7,22 +7,17 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1d222b;
     color: white;
-    margin: -1px;
+    margin: 0px;
 }
 
 header {
-    background-color: rgb(253, 152, 0);
+    background-color: #353e4e;
+    font-size: 20px;
     width: 100%;
     margin: auto;
-    padding: 1px;
+    padding: 1.0rem;
     text-align: center;
-}
-
-header p {
-    font-size: 15px;
-    margin-top: -10px;
-    font-style: italic;
-    font-weight: 548;
+    border: 2px solid #ffa600;
 }
 
 #city {
@@ -31,9 +26,9 @@ header p {
     padding: 10px;
     border-radius: 4px 0 0 4px;
     border: none;
-    width: 450px;
-    margin-left: 50px;
-    margin-top: 30px;
+    width: 45.0rem;
+    margin-left: 5.0rem;
+    margin-top: 3.0rem;
     background-color: white;
     color: rgb(0, 0, 0);
     transition: 0.5s;
@@ -72,7 +67,7 @@ header p {
 }
 
 #form h2 {
-    color: rgb(255, 166, 0);
+    color: #ffa600;
     text-align: center;
     font-size: 1.7rem;
     margin-bottom: 1rem;
@@ -100,8 +95,8 @@ header p {
     font-family: 'Bitter';
     color: black;
     background-color: rgb(255, 255, 255);
-    width: 300px;
-    height: 320px;
+    width: 30.0rem;
+    height: 32.0rem;
     border-radius: 8px;
     margin: 1rem auto;
     border-width: 5px;
@@ -111,6 +106,7 @@ header p {
     border-right-color: red;
     border-bottom-color: red;
     box-sizing: border-box;
+    box-shadow: 5px 4px 8px 0px black
 }
 
 #clima h2 {
@@ -173,6 +169,7 @@ section {
     padding: 1.5rem;
     border-radius: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 1px 1px 11px 0px black;
 }
 
 section p {
@@ -200,6 +197,7 @@ section .duvida {
     padding: 1.0rem;
     border-radius: 5px;
     margin-top: 2.0rem;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.452);
 }
 
 section a {
@@ -252,33 +250,50 @@ footer {
     }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2000px) {
+    html {
+        font-size: 150%;
+    }
+
     body {
         width: 100vw;
         overflow: hidden;
     }
 }
 
-@media (max-width: 610px) {
-    #form {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 650px) {
+    #form #city{
+        width: 60%;
         align-items: center;
         align-content: center;
     }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 45%;
+    }
+
+    header {
+        width: 95%;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
 
     #form #city {
-        width: 100%;
-        max-width: 400px;
-        margin: 5px;
+        width: 80%;
+        margin: auto;
         border-radius: 6px;
     }
 
-    button {
-        width: 100%;
-        max-width: 400px;
+    #form button {
+        width: 85%;
+        margin: auto;
+        margin-top: 10px;
         border-radius: 6px;
     }
 }
