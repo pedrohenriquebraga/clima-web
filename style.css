@@ -14,10 +14,8 @@ header {
     background-color: #353e4e;
     font-size: 20px;
     width: 100%;
-    margin: auto;
     padding: 1.0rem;
     text-align: center;
-    border: 2px solid #ffa600;
 }
 
 #city {
@@ -274,24 +272,15 @@ footer {
         font-size: 45%;
     }
 
-    header {
-        width: 95%;
-    }
-
-    #form {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-    }
 
     #form #city {
-        width: 80%;
+        width: 100%;
         margin: auto;
         border-radius: 6px;
     }
 
     #form button {
-        width: 85%;
+        width: 100%;
         margin: auto;
         margin-top: 10px;
         border-radius: 6px;
