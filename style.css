@@ -1,288 +1,299 @@
+* {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1d222b;
-    color: white;
-    margin: 0px;
+  font-family: Arial, sans-serif;
+  background-color: #1d222b;
+  color: white;
+  margin: 0px;
 }
 
 header {
-    background-color: #353e4e;
-    font-size: 20px;
-    width: 100%;
-    padding: 1.0rem;
-    text-align: center;
+  background-color: #353e4e;
+  font-size: 20px;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
 }
 
 #city {
-    text-align: center;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 4px 0 0 4px;
-    border: none;
-    width: 45.0rem;
-    margin-left: 5.0rem;
-    margin-top: 3.0rem;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
+  font-family: "Bitter";
+  font-weight: 600;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  outline: none;
+  width: 45rem;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+  height: 4rem;
 }
 
 ::-webkit-input-placeholder {
-    font-weight: 650px;
-    color: rgba(0, 0, 0, 0.705);
+  font-weight: 650px;
+  color: rgba(0, 0, 0, 0.705);
 }
 
 :-moz-placeholder {
-    /* Firefox 18- */
-    font-weight: 650px;
-    color: rgba(0, 0, 0, 0.705);
+  /* Firefox 18- */
+  font-weight: 650px;
+  color: rgba(0, 0, 0, 0.705);
 }
 
 ::-moz-placeholder {
-    /* Firefox 19+ */
-    font-weight: 650px;
-    color: rgba(0, 0, 0, 0.705);
+  /* Firefox 19+ */
+  font-weight: 650px;
+  color: rgba(0, 0, 0, 0.705);
 }
 
 :-ms-input-placeholder {
-    font-weight: 650px;
-    color: rgba(0, 0, 0, 0.705);
+  font-weight: 650px;
+  color: rgba(0, 0, 0, 0.705);
 }
 
 #city:hover {
-    background-color: rgb(216, 216, 216);
+  background-color: rgb(216, 216, 216);
 }
 
 #form {
-    text-align: center;
-    margin-top: auto;
-    box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  margin: 3rem 2rem;
 }
 
 #form h2 {
-    color: #ffa600;
-    text-align: center;
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
+  color: #ffa600;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
 }
 
 #form button {
-    font-weight: bolder;
-    padding: 1.2rem;
-    height: 15px;
-    padding-bottom: 26px;
-    padding-top: 11px;
-    margin-left: -3px;
-    border-radius: 0 4px 4px 0;
-    background-color: #ffa600ee;
-    color: white;
-    border: none;
-    transition: 0.5s;
+  font-weight: bolder;
+  padding: 1.2rem;
+  border-radius: 0 4px 4px 0;
+  background-color: #ffa600ee;
+  color: white;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  height: 4rem;
 }
 
 #form button:hover {
-    background-color: rgba(255, 166, 0, 0.842);
+  background-color: rgba(255, 166, 0, 0.842);
 }
 
 #clima {
-    font-family: 'Bitter';
-    color: black;
-    background-color: rgb(255, 255, 255);
-    width: 30.0rem;
-    height: 32.0rem;
-    border-radius: 8px;
-    margin: 1rem auto;
-    border-width: 5px;
-    border-style: solid;
-    border-left-color: blue;
-    border-top-color: blue;
-    border-right-color: red;
-    border-bottom-color: red;
-    box-sizing: border-box;
-    box-shadow: 5px 4px 8px 0px black
+  font-family: "Bitter";
+  color: black;
+  background-color: rgb(255, 255, 255);
+  width: 30rem;
+  height: 32rem;
+  border-radius: 8px;
+  margin: 1rem auto;
+  border-width: 5px;
+  border-style: solid;
+  border-left-color: blue;
+  border-top-color: blue;
+  border-right-color: red;
+  border-bottom-color: red;
+  box-sizing: border-box;
+  box-shadow: 5px 4px 8px 0px black;
 }
 
 #clima h2 {
-    font-size: 1.95rem;
-    color: black;
-    font-weight: bolder;
-    text-align: center;
-    padding-top: 1rem;
+  font-size: 1.95rem;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 #clima #temp {
-    box-sizing: border-box;
-    margin: 3rem;
+  box-sizing: border-box;
+  margin: 3rem;
 }
 
 #clima #Max {
-    text-align: center;
-    float: right;
-    font-size: 4.5rem;
-    color: red;
-    margin-right: 2.5rem;
+  text-align: center;
+  float: right;
+  font-size: 4.5rem;
+  color: red;
+  margin-right: 2.5rem;
 }
 
 #clima #Min {
-    text-align: center;
-    font-size: 4.5rem;
-    float: left;
-    color: rgb(17, 17, 252);
-    margin-left: 2.5rem;
+  text-align: center;
+  font-size: 4.5rem;
+  float: left;
+  color: rgb(17, 17, 252);
+  margin-left: 2.5rem;
 }
 
 #clima #Max sup {
-    float: right;
-    font-size: 1.5rem;
-    color: red;
-    clear: both;
+  float: right;
+  font-size: 1.5rem;
+  color: red;
+  clear: both;
 }
 
 #clima #Min sup {
-    font-size: 1.5rem;
-    float: right;
-    color: #1111fc;
-    clear: both;
+  font-size: 1.5rem;
+  float: right;
+  color: #1111fc;
+  clear: both;
 }
 
 #clima p {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    clear: both;
-    padding: 3.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  clear: both;
+  padding: 3.5rem;
 }
 
 section {
-    background-color: #353e4e;
-    width: 55%;
-    min-width: 32.0rem;
-    margin: auto;
-    margin-top: 5.0rem;
-    padding: 1.5rem;
-    border-radius: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: 1px 1px 11px 0px black;
+  width: 100%;
+  max-width: 55%;
+  min-width: 32rem;
+  background-color: #353e4e;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 1px 1px 11px 0px black;
 }
 
 section p {
-    font-size: 2.0rem;
-    text-align: justify;
+  font-size: 2rem;
+  text-align: justify;
 }
 
 section li {
-    font-size: 2.0rem;
-    margin: 1.0rem;
+  font-size: 2rem;
+  margin: 1rem;
 }
 
 section h1 {
-    font-size: 3.0rem;
-    text-align: center;
-    color: #ffa600ee;
+  font-size: 3rem;
+  text-align: center;
+  color: #ffa600ee;
 }
 
 section h2 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 section .duvida {
-    background-color: #475368;
-    padding: 1.0rem;
-    border-radius: 5px;
-    margin-top: 2.0rem;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.452);
+  background-color: #475368;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.452);
 }
 
 section a {
-    height: 5.0rem;
-    text-decoration: none;
-    color: #00d11cee;
-    font-weight: bold;
-    transition: 200ms;
+  height: 5rem;
+  text-decoration: none;
+  color: #00d11cee;
+  font-weight: bold;
+  transition: 200ms;
 }
 
 section a::before {
-    content: "🔗 ";
+  content: "🔗 ";
 }
 
 section a:hover {
-    color: #ffffffee;
+  color: #ffffffee;
 }
 
 section .duvida h3 {
-    color: #ffa600ee;
-    font-size: 2.0rem;
+  color: #ffa600ee;
+  font-size: 2rem;
 }
 
 section .duvida img {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 
 footer {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1.6rem;
-    text-align: center;
-    background-color: #ffa600ee;
-    margin-top: 2.0rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #ffa600ee;
+  margin-top: 2rem;
 }
 
-
 @media (max-width: 425px) {
-    html {
-        font-size: 50%;
-    }
+  html {
+    font-size: 50%;
+  }
 
-    #city {
-        width: fit-content;
-    }
+  #city {
+    width: fit-content;
+  }
 }
 
 @media (min-width: 2000px) {
-    html {
-        font-size: 150%;
-    }
+  html {
+    font-size: 150%;
+  }
 
-    body {
-        width: 100vw;
-        overflow: hidden;
-    }
+  body {
+    width: 100vw;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 650px) {
-    #form #city{
-        width: 60%;
-        align-items: center;
-        align-content: center;
-    }
+  #form #city {
+    width: 60%;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 @media (max-width: 400px) {
-    html {
-        font-size: 45%;
-    }
+  html {
+    font-size: 45%;
+  }
 
+  #form {
+    flex-direction: column;
+  }
 
-    #form #city {
-        width: 100%;
-        margin: auto;
-        border-radius: 6px;
-    }
+  #form #city {
+    width: 100%;
+    margin: auto;
+    border-radius: 6px;
+  }
 
-    #form button {
-        width: 100%;
-        margin: auto;
-        margin-top: 10px;
-        border-radius: 6px;
-    }
+  #form button {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
 }

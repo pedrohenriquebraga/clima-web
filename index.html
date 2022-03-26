@@ -1,159 +1,328 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165935836-3"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-165935836-3"
+    ></script>
     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-       gtag('config', 'UA-165935836-3');
+      gtag("config", "UA-165935836-3");
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="cache-control" content="cache" />
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <meta name="keywords" content="clima, previsão do tempo, temperatura, vai chover hoje, previsão do tempo hoje, clima hoje, previsão do tempo para hoje, clima do Brasil, clima online, como saber o clima de alguma região, previsão do tempo da semana, quantos graus vai fazer hoje">
-    <meta name="author" content="Pedro Henrique Santos Braga">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <meta
+      name="keywords"
+      content="clima, previsão do tempo, temperatura, vai chover hoje, previsão do tempo hoje, clima hoje, previsão do tempo para hoje, clima do Brasil, clima online, como saber o clima de alguma região, previsão do tempo da semana, quantos graus vai fazer hoje"
+    />
+    <meta name="author" content="Pedro Henrique Santos Braga" />
     <title>Clima Web - A Previsão do Tempo da sua cidade atualizada</title>
-    <meta name="description" content="Aqui na <em>Clima Web</em> você pode ver a <strong>previsão do tempo</strong> de <strong>qualquer cidade do mundo</strong>, inclusive do <strong>Brasil</strong>!!!">
-</head>
-<body onload="idCidade()">
+    <meta
+      name="description"
+      content="Aqui na <em>Clima Web</em> você pode ver a <strong>previsão do tempo</strong> de <strong>qualquer cidade do mundo</strong>, inclusive do <strong>Brasil</strong>!!!"
+    />
+  </head>
+  <body onload="idCidade()">
     <header>
-        <h1>Clima Web</h1>
+      <h1>Clima Web</h1>
     </header>
-    <div id="form" title="Área para digitar o nome da cidade e botão para obter a previsão do tempo">
-        <input tabindex="0" type="text" id="city" placeholder="Nome da cidade" title="Área para digitar o nome da cidade"> <button tabindex="0" title="Botão para pegar o clima" onclick="idCidade()">Procurar</button>
+    <div
+      id="form"
+      title="Área para digitar o nome da cidade e botão para obter a previsão do tempo"
+    >
+      <input
+        type="text"
+        id="city"
+        placeholder="Nome da cidade"
+        title="Área para digitar o nome da cidade"
+      />
+      <button title="Botão para pegar o clima" onclick="idCidade()">
+        Procurar
+      </button>
     </div>
     <div id="clima" title="Previsão do Tempo">
-        <h2 id="nomeCidade"></h2>
-        <div id="temp">
-            <h3 id="Min"></h3>
-            <h3 id='Max'></h3>
-        </div>
-        <p id="info"><em></em></p>
+      <h2 id="nomeCidade"></h2>
+      <div id="temp">
+        <h3 id="Min"></h3>
+        <h3 id="Max"></h3>
+      </div>
+      <p id="info"><em></em></p>
     </div>
 
     <section>
-        <h1>Dúvidas Recorrentes</h1>
-        <p>Aqui vão algumas dúvidas que podem aparecer, durante o uso do site. Caso não encontre o que precise, <a href="#redes-sociais" rel="internal">entre em contato comigo</a> para que eu possa resolver seu problema.</p>
+      <h1>Dúvidas Recorrentes</h1>
+      <p>
+        Aqui vão algumas dúvidas que podem aparecer, durante o uso do site. Caso
+        não encontre o que precise,
+        <a href="#redes-sociais" rel="internal">entre em contato comigo</a> para
+        que eu possa resolver seu problema.
+      </p>
 
-        <h2>Índice</h2>
-        <ol>
-            <li><a href="#clima-web" rel="internal">O que é a Clima Web?</a></li>
-            <li><a href="#seguranca" rel="internal">Este site é seguro?</a></li>
-            <li><a href="#como-usar" rel="internal">Como posso usar o Clima Web?</a></li>
-            <li><a href="#outros-paises" rel="internal">É possível pesquisar cidades de outros países?</a></li>
-            <li><a href="#info-confiaveis" rel="internal">As informações do site são confiáveis?</a></li>
-            <li><a href="#info-origem" rel="internal">De onde as informações vem?</a></li>
-            <li><a href="#pagar-servico" rel="internal">Preciso pagar para usar seu serviço?
-            </a></li>
-            <li><a href="#tela" rel="internal">O que são essas informações na tela?</a></li>
-            <li><a href="#nao-encontra-cidade" rel="internal">Não consigo encontrar minha cidade. Por quê?</a></li>
-            <li><a href="#frequencia" rel="internal">Com qual frequência as informações são atualizadas?</a></li>
-            <li><a href="#site-celular" rel="internal">Esse site pode ser usado no celular?</a></li>
-            <li><a href="#contribuir" rel="internal">Como posso contribuir com este projeto?</a></li>
-            <li><a href="#licenca" rel="internal">Posso usar o código desse site em meus projetos?</a></li>
-            <li><a href="#redes-sociais" rel="internal">Acesse minhas redes sociais</a></li>
-        </ol>
-        <article class="duvida" id="clima-web">
-            <h3>O que é a Clima Web?</h3>
-            <p><strong>Clima Web</strong> é um site desenvolvido pelo Pedro Henrique Santos Braga, com o intuito de levar a <strong>Previsão do Tempo</strong> de todas as cidades do Brasil e do mundo.</p>
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#clima-web" rel="internal">O que é a Clima Web?</a></li>
+        <li><a href="#seguranca" rel="internal">Este site é seguro?</a></li>
+        <li>
+          <a href="#como-usar" rel="internal">Como posso usar o Clima Web?</a>
+        </li>
+        <li>
+          <a href="#outros-paises" rel="internal"
+            >É possível pesquisar cidades de outros países?</a
+          >
+        </li>
+        <li>
+          <a href="#info-confiaveis" rel="internal"
+            >As informações do site são confiáveis?</a
+          >
+        </li>
+        <li>
+          <a href="#info-origem" rel="internal">De onde as informações vem?</a>
+        </li>
+        <li>
+          <a href="#pagar-servico" rel="internal"
+            >Preciso pagar para usar seu serviço?
+          </a>
+        </li>
+        <li>
+          <a href="#tela" rel="internal"
+            >O que são essas informações na tela?</a
+          >
+        </li>
+        <li>
+          <a href="#nao-encontra-cidade" rel="internal"
+            >Não consigo encontrar minha cidade. Por quê?</a
+          >
+        </li>
+        <li>
+          <a href="#frequencia" rel="internal"
+            >Com qual frequência as informações são atualizadas?</a
+          >
+        </li>
+        <li>
+          <a href="#site-celular" rel="internal"
+            >Esse site pode ser usado no celular?</a
+          >
+        </li>
+        <li>
+          <a href="#contribuir" rel="internal"
+            >Como posso contribuir com este projeto?</a
+          >
+        </li>
+        <li>
+          <a href="#licenca" rel="internal"
+            >Posso usar o código desse site em meus projetos?</a
+          >
+        </li>
+        <li>
+          <a href="#redes-sociais" rel="internal"
+            >Acesse minhas redes sociais</a
+          >
+        </li>
+      </ol>
+      <article class="duvida" id="clima-web">
+        <h3>O que é a Clima Web?</h3>
+        <p>
+          <strong>Clima Web</strong> é um site desenvolvido pelo Pedro Henrique
+          Santos Braga, com o intuito de levar a
+          <strong>Previsão do Tempo</strong> de todas as cidades do Brasil e do
+          mundo.
+        </p>
 
-            <p>Os dados são constantemente atualizados para sempre mostrar informação certa a quem pesquisar.</p>
-        </article>
+        <p>
+          Os dados são constantemente atualizados para sempre mostrar informação
+          certa a quem pesquisar.
+        </p>
+      </article>
 
-        <article class="duvida" id="seguranca">
-            <h3>Este site é seguro?</h3>
-            <p>Sim!! O site foi feito pensando na <strong>segurança do usuário</strong>. Nós não pegamos, salvamos e nem distribuímos informações de nossos usuários. Nós só usamos o nome de sua cidade e mais nada para trazer a Previsão do Tempo atualizada.</p>
-        </article>
-        <article class="duvida" id="como-usar">
-            <h3>Como posso usar o Clima Web?</h3>
-            <p>É muito simples utilizar nosso site, basta apenas digitar o nome da sua cidade <strong>corretamente</strong> (sem abreviações e com todos os acentos e pontuações) e esperar alguns segundos e pronto!! Previsão do Tempo aparecerá na tela.</p>
-        </article>
-        <article class="duvida" id="outros-paises">
-            <h3>É possível pesquisar cidades de outros países?</h3>
-            <p>Sim, é possível pesquisar a previsão do tempo de vários países como Estados Unidos, Canadá, Argentina, Rússia, China, entre muitos outros países.</p>
-        </article>
-        <article class="duvida" id="info-confiaveis">
-            <h3>As informações do site são confiáveis?</h3>
-            <p>Sim, todos os dados são pegos de uma <strong>fonte confiável</strong>. A chance de uma previsão do tempo de um período de 24 horas estar certa é de <strong>90%</strong>, estão pode confiar na nossa previsão!</p>
-        </article>
-        <article class="duvida" id="info-origem">
-            <h3>De onde as informações vem?</h3>
-            <p>Todos os dados são obtidos da <abbr title="Application Programming Interface">API</abbr> da <a href="https://developer.accuweather.com/" target="_blank" rel="external nofollow">AccuWeather</a>, um site super confiável, que sempre mostra a previsão certa.</p>
-        </article>
-        <article class="duvida" id="pagar-servico">
-            <h3>Preciso pagar para usar seu serviço?
-            </h3>
-            <p>Não, você não precisa me pagar nenhum centavo para usar o serviço de previsão do tempo, mas, caso queira doar algum valor em dinheiro para mim, eu ficarei muito grato. Caso queira realizar um doação a mim, acesse uma de <a href="#redes-sociais" rel="internal">minhas redes sociais</a> e me avise.</p>
-        </article>
-        <article class="duvida" id="tela">
-            <h3>O que são essas informações na tela?</h3>
-            <picture>
-                <source srcset="imagens\clima-web.webp" alt="informação do site">
-                <source srcset="imagens\clima-web.jpg" alt="informação do site">
-                <img src="imagens/clima-web.png" alt="informação do site">
-            </picture>
-        </article>
-        <article class="duvida" id="nao-encontra-cidade">
-            <h3>Não consigo encontrar minha cidade. Por quê?</h3>
-            <p>Podem haver vários motivos, entre eles estão:</p>
+      <article class="duvida" id="seguranca">
+        <h3>Este site é seguro?</h3>
+        <p>
+          Sim!! O site foi feito pensando na
+          <strong>segurança do usuário</strong>. Nós não pegamos, salvamos e nem
+          distribuímos informações de nossos usuários. Nós só usamos o nome de
+          sua cidade e mais nada para trazer a Previsão do Tempo atualizada.
+        </p>
+      </article>
+      <article class="duvida" id="como-usar">
+        <h3>Como posso usar o Clima Web?</h3>
+        <p>
+          É muito simples utilizar nosso site, basta apenas digitar o nome da
+          sua cidade <strong>corretamente</strong> (sem abreviações e com todos
+          os acentos e pontuações) e esperar alguns segundos e pronto!! Previsão
+          do Tempo aparecerá na tela.
+        </p>
+      </article>
+      <article class="duvida" id="outros-paises">
+        <h3>É possível pesquisar cidades de outros países?</h3>
+        <p>
+          Sim, é possível pesquisar a previsão do tempo de vários países como
+          Estados Unidos, Canadá, Argentina, Rússia, China, entre muitos outros
+          países.
+        </p>
+      </article>
+      <article class="duvida" id="info-confiaveis">
+        <h3>As informações do site são confiáveis?</h3>
+        <p>
+          Sim, todos os dados são pegos de uma <strong>fonte confiável</strong>.
+          A chance de uma previsão do tempo de um período de 24 horas estar
+          certa é de <strong>90%</strong>, estão pode confiar na nossa previsão!
+        </p>
+      </article>
+      <article class="duvida" id="info-origem">
+        <h3>De onde as informações vem?</h3>
+        <p>
+          Todos os dados são obtidos da
+          <abbr title="Application Programming Interface">API</abbr> da
+          <a
+            href="https://developer.accuweather.com/"
+            target="_blank"
+            rel="external nofollow"
+            >AccuWeather</a
+          >, um site super confiável, que sempre mostra a previsão certa.
+        </p>
+      </article>
+      <article class="duvida" id="pagar-servico">
+        <h3>Preciso pagar para usar seu serviço?</h3>
+        <p>
+          Não, você não precisa me pagar nenhum centavo para usar o serviço de
+          previsão do tempo, mas, caso queira doar algum valor em dinheiro para
+          mim, eu ficarei muito grato. Caso queira realizar um doação a mim,
+          acesse uma de
+          <a href="#redes-sociais" rel="internal">minhas redes sociais</a> e me
+          avise.
+        </p>
+      </article>
+      <article class="duvida" id="tela">
+        <h3>O que são essas informações na tela?</h3>
+        <picture>
+          <source srcset="imagens\clima-web.webp" alt="informação do site" />
+          <source srcset="imagens\clima-web.jpg" alt="informação do site" />
+          <img src="imagens/clima-web.png" alt="informação do site" />
+        </picture>
+      </article>
+      <article class="duvida" id="nao-encontra-cidade">
+        <h3>Não consigo encontrar minha cidade. Por quê?</h3>
+        <p>Podem haver vários motivos, entre eles estão:</p>
 
-            <ul>
-                <li>
-                    Você digitou <strong>incorretamente</strong> o nome da cidade, verifique se você digitou o nome certo.
-                </li>
-                <li>
-                    Nós atingimos o limite de acessos na API, caso esse seja o problema, peço desculpas pelo incoveniente, estou tentando resolver essa questão o mais rápido possível.
-                </li>
-                <li>
-                    Sua cidade pode <strong>não estar cadastrada na API</strong>, caso acredite que esse seja o problema, <a href="https://developer.accuweather.com/contact-us" target="_blank" rel="external">fale com o suporte da API</a> e peça para que eles adicionem sua cidade em seu banco de dados.
-                </li>
-                <li>Sua conexão pode estar <strong>lenta ou indisponível</strong>.</li>
-            </ul>
-        </article>
-        <article class="duvida" id="frequencia">
-            <h3>Com qual frequência as informações são atualizadas?</h3>
-            <p>As informações são atualizadas em <strong>aproximadamente 24 horas</strong>, sendo que após às 18:00 horas, os dados da noite são exibidas e a partir das 6 da manhã às informações exibidas são da manhã.
-            </p>
-        </article>
-        <article class="duvida" id="site-celular">
-            <h3>Esse site pode ser usado no celular?</h3>
-            <p>Sim, o site foi feito para funcionar em <strong>celulares, tablets, notebooks</strong> e vários outros dispositivos. Tudo foi feito pensando na melhor experiência para o usuário.</p>
-        </article>
-        <article class="duvida" id="contribuir">
-            <h3>Como posso contribuir com este projeto?</h3>
-            <p>Você pode me ajudar a desenvolver este projeto entrando em meu <a href="https://github.com/pedrohenriquebraga/clima-web" target="_blank" rel="external">GitHub</a>. Para ajudar no projeto você não precisa saber programação, basta sugerir alguma melhoria para o site que eu adiciono com todo o prazer.</p>
-            <p>Lembrando que esse projeto só tem uma pessoa envolvida, então sua sugestão pode não ser adicionada em um curto período de tempo.</p>
-        </article>
-        <article class="duvida" id="licenca">
-            <h3>Posso usar o código desse site em meus projetos?</h3>
-            <p>Pode, desde que você siga a <a href="LICENSE.txt" download="LICENSE.txt">licença MIT</a>, que a licença que está sob o site. Além disso, deve-se <strong>falar comigo antes</strong> de usá-lo. Caso a licença seja descumprida, poderá ser <strong>penalizado</strong>.</p>
-        </article>
-        <article class="duvida">
-            <h3 id="redes-sociais">Acesse minhas redes sociais</h3>
-            <ul>
-                <li>
-                    <a href="https://youtube.com/gamesantos" target="_blank" rel="external">YouTube - Game Santos</a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/pedro_henriquebraga" target="_blank" rel="external">Instagram - @pedro_henriquebraga</a>
-                </li>
-                <li>
-                    <a href="https://github.com/pedrohenriquebraga" target="_blank" rel="external">GitHub - Pedro Henrique Braga</a>
-                </li>
-            </ul>
-        </article>
+        <ul>
+          <li>
+            Você digitou <strong>incorretamente</strong> o nome da cidade,
+            verifique se você digitou o nome certo.
+          </li>
+          <li>
+            Nós atingimos o limite de acessos na API, caso esse seja o problema,
+            peço desculpas pelo incoveniente, estou tentando resolver essa
+            questão o mais rápido possível.
+          </li>
+          <li>
+            Sua cidade pode <strong>não estar cadastrada na API</strong>, caso
+            acredite que esse seja o problema,
+            <a
+              href="https://developer.accuweather.com/contact-us"
+              target="_blank"
+              rel="external"
+              >fale com o suporte da API</a
+            >
+            e peça para que eles adicionem sua cidade em seu banco de dados.
+          </li>
+          <li>
+            Sua conexão pode estar <strong>lenta ou indisponível</strong>.
+          </li>
+        </ul>
+      </article>
+      <article class="duvida" id="frequencia">
+        <h3>Com qual frequência as informações são atualizadas?</h3>
+        <p>
+          As informações são atualizadas em
+          <strong>aproximadamente 24 horas</strong>, sendo que após às 18:00
+          horas, os dados da noite são exibidas e a partir das 6 da manhã às
+          informações exibidas são da manhã.
+        </p>
+      </article>
+      <article class="duvida" id="site-celular">
+        <h3>Esse site pode ser usado no celular?</h3>
+        <p>
+          Sim, o site foi feito para funcionar em
+          <strong>celulares, tablets, notebooks</strong> e vários outros
+          dispositivos. Tudo foi feito pensando na melhor experiência para o
+          usuário.
+        </p>
+      </article>
+      <article class="duvida" id="contribuir">
+        <h3>Como posso contribuir com este projeto?</h3>
+        <p>
+          Você pode me ajudar a desenvolver este projeto entrando em meu
+          <a
+            href="https://github.com/pedrohenriquebraga/clima-web"
+            target="_blank"
+            rel="external"
+            >GitHub</a
+          >. Para ajudar no projeto você não precisa saber programação, basta
+          sugerir alguma melhoria para o site que eu adiciono com todo o prazer.
+        </p>
+        <p>
+          Lembrando que esse projeto só tem uma pessoa envolvida, então sua
+          sugestão pode não ser adicionada em um curto período de tempo.
+        </p>
+      </article>
+      <article class="duvida" id="licenca">
+        <h3>Posso usar o código desse site em meus projetos?</h3>
+        <p>
+          Pode, desde que você siga a
+          <a href="LICENSE.txt" download="LICENSE.txt">licença MIT</a>, que a
+          licença que está sob o site. Além disso, deve-se
+          <strong>falar comigo antes</strong> de usá-lo. Caso a licença seja
+          descumprida, poderá ser <strong>penalizado</strong>.
+        </p>
+      </article>
+      <article class="duvida">
+        <h3 id="redes-sociais">Acesse minhas redes sociais</h3>
+        <ul>
+          <li>
+            <a
+              href="https://youtube.com/gamesantos"
+              target="_blank"
+              rel="external"
+              >YouTube - Game Santos</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/pedro_henriquebraga"
+              target="_blank"
+              rel="external"
+              >Instagram - @pedro_henriquebraga</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/pedrohenriquebraga"
+              target="_blank"
+              rel="external"
+              >GitHub - Pedro Henrique Braga</a
+            >
+          </li>
+        </ul>
+      </article>
     </section>
     <footer>
-        <p>2020 Todos os direitos resevados &copy;.</p>
+      <p>2020 Todos os direitos resevados &copy;.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
